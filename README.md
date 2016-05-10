@@ -11,7 +11,7 @@
 + Make the data accesible as Web Service
     - ~~Basic, get all data~~
     - Query Data (Filters)
-+ Multi-language support (Web)
++ ~~Multi-language support (Web)~~
     - ~~Spanish~~
     - ~~English~~
 + Multi-language support (Data)
