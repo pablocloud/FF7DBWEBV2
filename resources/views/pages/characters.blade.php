@@ -1,0 +1,39 @@
+@extends('template')
+
+@section('content')
+	<table style="width: 100%">
+		<thead>
+		<tr>
+			<th>@lang('characters.img')</th>
+			<th>@lang('characters.name')</th>
+			<th>@lang('characters.age')</th>
+			<th>@lang('characters.ocupation')</th>
+			<th>@lang('characters.weapon')</th>
+			<th>@lang('characters.birthDate')</th>
+			<th>@lang('characters.birthPlace')</th>
+		</tr>
+		</thead>
+		<tbody>
+		@forelse($characters as $character)
+			<tr>
+				<td>{{$character->imagen}}</td>
+				<td>{{$character->nombre}}</td>
+				<td>{{$character->edad}}</td>
+				<td>{{$character->ocupacion}}</td>
+				<td>{{$character->arma}}</td>
+				<td>{{$character->fechana}}</td>
+				<td>{{$character->lugarna}}</td>
+			</tr>
+		@empty
+			<tr>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+			</tr>
+		@endforelse
+		</tbody>
+	</table>
+@endsection

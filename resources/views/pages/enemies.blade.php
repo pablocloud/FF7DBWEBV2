@@ -1,0 +1,44 @@
+@extends('template')
+
+@section('content')
+	<table style="width: 100%">
+		<thead>
+		<tr>
+			<th>@lang('enemies.img')</th>
+			<th>@lang('enemies.name')</th>
+			<th>@lang('enemies.level')</th>
+			<th>@lang('enemies.pg')</th>
+			<th>@lang('enemies.mp')</th>
+			<th>@lang('enemies.exp')</th>
+			<th>@lang('enemies.ap')</th>
+			<th>@lang('enemies.gil')</th>
+			<th>@lang('enemies.weak')</th>
+			<th>@lang('enemies.strong')</th>
+			<th>@lang('enemies.drains')</th>
+			<th>@lang('enemies.immune')</th>
+		</tr>
+		</thead>
+		<tbody>
+		@forelse($enemies as $enemy)
+			<tr>
+				<td>{{$enemy->imagen}}</td>
+				<td>{{$enemy->nombre}}</td>
+				<td>{{$enemy->nivel}}</td>
+				<td>{{$enemy->pg}}</td>
+				<td>{{$enemy->mp}}</td>
+				<td>{{$enemy->exp}}</td>
+				<td>{{$enemy->ap}}</td>
+				<td>{{$enemy->gil}}</td>
+				<td>{{$enemy->debil}}</td>
+				<td>{{$enemy->fuerte}}</td>
+				<td>{{$enemy->absorve}}</td>
+				<td>{{$enemy->inmune}}</td>
+			</tr>
+		@empty
+			<tr>
+				<td>@lang('shared.empty')</td>
+			</tr>
+		@endforelse
+		</tbody>
+	</table>
+@endsection

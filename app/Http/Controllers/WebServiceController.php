@@ -7,8 +7,9 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesResources;
+use Illuminate\Support\Facades\DB;
 
-class Controller extends BaseController
+class WebServiceController extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
 
@@ -17,10 +18,9 @@ class Controller extends BaseController
      */
     public function characters()
     {
-        $service = new WebServiceController();
-        $characters = $service->characters();
         /** @noinspection PhpUndefinedMethodInspection */
-        return view('pages.characters')->with(compact('characters'));
+        $characters = DB::select('SELECT * FROM personajes');
+        return $characters;
     }
 
     /**
@@ -28,10 +28,9 @@ class Controller extends BaseController
      */
     public function secondaryCharacters()
     {
-        $service = new WebServiceController();
-        $secondaryCharacters = $service->secondaryCharacters();
         /** @noinspection PhpUndefinedMethodInspection */
-        return view('pages.secondaryCharacters')->with(compact('secondaryCharacters'));
+        $characters = DB::select('SELECT * FROM personajessecundarios');
+        return $characters;
     }
 
     /**
@@ -39,10 +38,9 @@ class Controller extends BaseController
      */
     public function enemies()
     {
-        $service = new WebServiceController();
-        $enemies = $service->enemies();
         /** @noinspection PhpUndefinedMethodInspection */
-        return view('pages.enemies')->with(compact('enemies'));
+        $enemies = DB::select('SELECT * FROM enemigos');
+        return $enemies;
     }
 
     /**
@@ -50,10 +48,9 @@ class Controller extends BaseController
      */
     public function materia()
     {
-        $service = new WebServiceController();
-        $materia = $service->materia();
         /** @noinspection PhpUndefinedMethodInspection */
-        return view('pages.materia')->with(compact('materia'));
+        $materia = DB::select('SELECT * FROM materia');
+        return $materia;
     }
 
     /**
@@ -61,10 +58,9 @@ class Controller extends BaseController
      */
     public function weapons()
     {
-        $service = new WebServiceController();
-        $weapons = $service->weapons();
         /** @noinspection PhpUndefinedMethodInspection */
-        return view('pages.weapons')->with(compact('weapons'));
+        $weapons = DB::select('SELECT * FROM armas');
+        return $weapons;
     }
 
     /**
@@ -72,10 +68,9 @@ class Controller extends BaseController
      */
     public function songs()
     {
-        $service = new WebServiceController();
-        $songs = $service->songs();
         /** @noinspection PhpUndefinedMethodInspection */
-        return view('pages.songs')->with(compact('songs'));
+        $songs = DB::select('SELECT * FROM canciones');
+        return $songs;
     }
 
     /**
@@ -83,10 +78,9 @@ class Controller extends BaseController
      */
     public function items()
     {
-        $service = new WebServiceController();
-        $items = $service->items();
         /** @noinspection PhpUndefinedMethodInspection */
-        return view('pages.items')->with(compact('items'));
+        $items = DB::select('SELECT * FROM objetos');
+        return $items;
     }
 
 }

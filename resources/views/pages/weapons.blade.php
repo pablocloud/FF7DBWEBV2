@@ -1,0 +1,43 @@
+@extends('template')
+
+@section('content')
+	<table style="width: 100%">
+		<thead>
+		<tr>
+			<th>@lang('weapons.name')</th>
+			<th>@lang('weapons.attack')</th>
+			<th>@lang('weapons.hit')</th>
+			<th>@lang('weapons.growth')</th>
+			<th>@lang('weapons.location')</th>
+			<th>@lang('weapons.cost')</th>
+			<th>@lang('weapons.notes')</th>
+			<th>@lang('weapons.character')</th>
+		</tr>
+		</thead>
+		<tbody>
+		@forelse($weapons as $weapon)
+			<tr>
+				<td>{{$weapon->nombre}}</td>
+				<td>{{$weapon->ataque}}</td>
+				<td>{{$weapon->golpe}}</td>
+				<td>{{$weapon->materia9}}</td>
+				<td>{{$weapon->localizacion}}</td>
+				<td>{{$weapon->coste}}</td>
+				<td>{{$weapon->notas}}</td>
+				<td>{{$weapon->equipadopor}}</td>
+			</tr>
+		@empty
+			<tr>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+				<td>@lang('shared.empty')</td>
+			</tr>
+		@endforelse
+		</tbody>
+	</table>
+@endsection
