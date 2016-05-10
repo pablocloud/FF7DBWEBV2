@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Route;
 Route::group(['prefix' => ''], function () {
 
     /** @noinspection PhpUndefinedMethodInspection */
+    Route::get('', function () {
+        return redirect('/characters');
+    });
+    /** @noinspection PhpUndefinedMethodInspection */
     Route::get('characters', ['uses' => 'Controller@characters', 'as' => 'characters']);
     /** @noinspection PhpUndefinedMethodInspection */
     Route::get('secondaryCharacters', ['uses' => 'Controller@secondaryCharacters', 'as' => 'secondaryCharacters']);
