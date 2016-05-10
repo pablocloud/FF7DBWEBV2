@@ -7,5 +7,6 @@ return [
     'materia' => 'Materia',
     'weapons' => 'Armas',
     'songs' => 'Canciones',
-    'items' => 'Objetos'
+    'items' => 'Objetos',
+	'changeLang' => 'Cambiar'
 ];

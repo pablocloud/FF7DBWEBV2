@@ -40,11 +40,16 @@
 					<div class="form-group">
 						<!--suppress HtmlFormInputWithoutLabel -->
 						<select name="lang">
-							<option value="es">Español/Spanish</option>
-							<option value="en">English/Inglés</option>
+							@if(Session::get('lang') == 'es')
+								<option selected value="es">Español/Spanish</option>
+								<option value="en">English/Inglés</option>
+							@else
+								<option value="es">Español/Spanish</option>
+								<option selected value="en">English/Inglés</option>
+							@endif
 						</select>
 					</div>
-					<input class="btn btn-default" type="submit">
+					<input class="btn btn-default" type="submit" value="@lang('main.changeLang')">
 				</form>
 			</div>
 		</div>

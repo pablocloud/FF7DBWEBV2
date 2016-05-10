@@ -13,7 +13,7 @@
     - Query Data (Filters)
 + Multi-language support (Web)
     - ~~Spanish~~
-    - English
+    - ~~English~~
 + Multi-language support (Data)
     - ~~Spanish~~
     - English

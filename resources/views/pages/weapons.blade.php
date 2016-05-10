@@ -56,9 +56,11 @@
 	<script>
 		$(document).ready(function () {
 			$('#table').DataTable({
+				@if(Session::get('lang') == 'es')
 				'language': {
-					'url' : '{{asset('assets/datatables-spanish.json')}}'
+					'url': '{{asset('assets/datatables-spanish.json')}}'
 				}
+				@endif
 			});
 		})
 		;
