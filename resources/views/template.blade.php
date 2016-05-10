@@ -36,6 +36,16 @@
 					<li><a href="{{route('songs')}}">@lang('main.songs')</a></li>
 					<li><a href="{{route('items')}}">@lang('main.items')</a></li>
 				</ul>
+				<form class="navbar-form" method="get" action="{{route('changeLang')}}">
+					<div class="form-group">
+						<!--suppress HtmlFormInputWithoutLabel -->
+						<select name="lang">
+							<option value="es">Español/Spanish</option>
+							<option value="en">English/Inglés</option>
+						</select>
+					</div>
+					<input class="btn btn-default" type="submit">
+				</form>
 			</div>
 		</div>
 	</nav>

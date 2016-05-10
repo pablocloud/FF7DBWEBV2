@@ -11,6 +11,8 @@ Route::group(['prefix' => ''], function () {
         return redirect('/characters');
     });
     /** @noinspection PhpUndefinedMethodInspection */
+    Route::get('/lang', ['uses' => 'Controller@changeLang', 'as' => 'changeLang']);
+    /** @noinspection PhpUndefinedMethodInspection */
     Route::get('characters', ['uses' => 'Controller@characters', 'as' => 'characters']);
     /** @noinspection PhpUndefinedMethodInspection */
     Route::get('secondaryCharacters', ['uses' => 'Controller@secondaryCharacters', 'as' => 'secondaryCharacters']);

@@ -12,8 +12,8 @@
     - ~~Basic, get all data~~
     - Query Data (Filters)
 + Multi-language support (Web)
-    - Spanish
+    - ~~Spanish~~
     - English
 + Multi-language support (Data)
-    - Spanish
+    - ~~Spanish~~
     - English

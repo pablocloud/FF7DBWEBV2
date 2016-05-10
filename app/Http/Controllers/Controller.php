@@ -7,6 +7,9 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesResources;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Session;
 
 class Controller extends BaseController
 {
@@ -15,8 +18,32 @@ class Controller extends BaseController
     /**
      * @return mixed
      */
+    public function changeLang(){
+        /** @noinspection PhpUndefinedMethodInspection */
+        $input = Input::all();
+        /** @noinspection PhpUndefinedMethodInspection */
+        Session::put('lang', $input['lang']);
+        return redirect('/characters');
+    }
+
+    private function doLocale(){
+        /** @noinspection PhpUndefinedMethodInspection */
+        $lang = Session::get('lang');
+        if($lang!= null){
+            /** @noinspection PhpUndefinedMethodInspection */
+            App::setLocale($lang);
+        }else{
+            /** @noinspection PhpUndefinedMethodInspection */
+            App::setLocale('es');
+        }
+    }
+
+    /**
+     * @return mixed
+     */
     public function characters()
     {
+        $this->doLocale();
         $service = new WebServiceController();
         $characters = $service->characters();
         /** @noinspection PhpUndefinedMethodInspection */
@@ -28,6 +55,7 @@ class Controller extends BaseController
      */
     public function secondaryCharacters()
     {
+        $this->doLocale();
         $service = new WebServiceController();
         $secondaryCharacters = $service->secondaryCharacters();
         /** @noinspection PhpUndefinedMethodInspection */
@@ -39,6 +67,7 @@ class Controller extends BaseController
      */
     public function enemies()
     {
+        $this->doLocale();
         $service = new WebServiceController();
         $enemies = $service->enemies();
         /** @noinspection PhpUndefinedMethodInspection */
@@ -50,6 +79,7 @@ class Controller extends BaseController
      */
     public function materia()
     {
+        $this->doLocale();
         $service = new WebServiceController();
         $materia = $service->materia();
         /** @noinspection PhpUndefinedMethodInspection */
@@ -61,6 +91,7 @@ class Controller extends BaseController
      */
     public function weapons()
     {
+        $this->doLocale();
         $service = new WebServiceController();
         $weapons = $service->weapons();
         /** @noinspection PhpUndefinedMethodInspection */
@@ -72,6 +103,7 @@ class Controller extends BaseController
      */
     public function songs()
     {
+        $this->doLocale();
         $service = new WebServiceController();
         $songs = $service->songs();
         /** @noinspection PhpUndefinedMethodInspection */
@@ -83,6 +115,7 @@ class Controller extends BaseController
      */
     public function items()
     {
+        $this->doLocale();
         $service = new WebServiceController();
         $items = $service->items();
         /** @noinspection PhpUndefinedMethodInspection */
