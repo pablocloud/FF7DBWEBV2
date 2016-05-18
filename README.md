@@ -11,6 +11,9 @@
 + Make the data accesible as Web Service
     - ~~Basic, get all data~~
     - Query Data (Filters)
++ Let's use a 'Cloud' web service (Self made) for all the data
+     - Build the DB
+     - Build the API
 + ~~Multi-language support (Web)~~
     - ~~Spanish~~
     - ~~English~~
