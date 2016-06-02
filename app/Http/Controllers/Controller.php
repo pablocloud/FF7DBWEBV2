@@ -26,6 +26,9 @@ class Controller extends BaseController
         return redirect('/characters');
     }
 
+    /**
+     * Does the language changing wibily wobily magic.
+     */
     private function doLocale(){
         /** @noinspection PhpUndefinedMethodInspection */
         $lang = Session::get('lang');
