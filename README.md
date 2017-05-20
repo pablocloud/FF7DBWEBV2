@@ -1,6 +1,10 @@
 # FF7DBWEBV2
 
-## Goals
+## Screenshots
+
+![screenshot characters](screenshots/characters.png "Characters")
+
+### Goals
 
 + Rebuild the old site (http://pabloverdugo.es/ff7db)
      - ~~Basic template of all the data~~
