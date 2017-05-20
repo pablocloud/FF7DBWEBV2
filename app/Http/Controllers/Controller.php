@@ -18,7 +18,8 @@ class Controller extends BaseController
     /**
      * @return mixed
      */
-    public function changeLang(){
+    public function changeLang()
+    {
         /** @noinspection PhpUndefinedMethodInspection */
         $input = Input::all();
         /** @noinspection PhpUndefinedMethodInspection */
@@ -29,13 +30,14 @@ class Controller extends BaseController
     /**
      * Does the language changing wibily wobily magic.
      */
-    private function doLocale(){
+    private function doLocale()
+    {
         /** @noinspection PhpUndefinedMethodInspection */
         $lang = Session::get('lang');
-        if($lang!= null){
+        if ($lang != null) {
             /** @noinspection PhpUndefinedMethodInspection */
             App::setLocale($lang);
-        }else{
+        } else {
             /** @noinspection PhpUndefinedMethodInspection */
             App::setLocale('es');
         }
