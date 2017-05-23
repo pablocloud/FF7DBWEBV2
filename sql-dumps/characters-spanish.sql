@@ -1,0 +1,10 @@
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/aeris.gif', 'Aeris Gainsborough', '22', 'Florista', 'Baston', '7 Febrero', 'Pueblo Iciclos');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/barret.gif', 'Barret Wallace', '35', 'Líder de Avalancha', 'Mano-arma', '15 Diciembre', 'Corel');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/cait.gif', 'Cait Sith', 'Desconocida', 'Vidente', 'Megáfono', 'Desconocida', 'Desconocido');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/cid.gif', 'Cid Highwind', '32', 'Aviador', 'Lanza', '22 Febrero', 'Desconocido');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/cloud.gif', 'Cloud Strife', '21', 'Mercenario', 'Espada', '19 Agosto', 'Nibelheim');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/red13.gif', 'Red XIII', '45', 'Bestia (roar roar and shit)', 'Bandana', 'Desconocida', 'Cañón Cosmo');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/sephiroth.gif', 'Sephiroth', 'Desconocida', 'Desconocida', 'Katana', 'Desconocida', 'Desconocido');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/tifa.gif', 'Tifa Lockheart', '20', 'Tabernera y miembro de Avalancha', 'Guantes', '3 Mayo', 'Nibelheim');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/vincent.gif', 'Vincent Valantine', 'Desconocida', 'Desempleado', 'Pistola', '13 Octubre', 'Desconocido');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/yuffie.gif', 'Yuffie Kisaragi', '16', 'Ninja, Ladr...ejem ejem', 'Armas ninja', '20 Noviembre', 'Wutai');

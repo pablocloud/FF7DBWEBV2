@@ -15,6 +15,7 @@
                         <th>@lang('weapons.attack')</th>
                         <th>@lang('weapons.hit')</th>
                         <th>@lang('weapons.growth')</th>
+                        <th>@lang('weapons.ranures')</th>
                         <th>@lang('weapons.location')</th>
                         <th>@lang('weapons.cost')</th>
                         <th>@lang('weapons.notes')</th>
@@ -28,6 +29,16 @@
                             <td>{{$weapon->ataque}}</td>
                             <td>{{$weapon->golpe}}</td>
                             <td>{{$weapon->materia9}}</td>
+                            <td>
+                                <img src="{{asset('assets/'.$weapon->materia)}}"/>
+                                <img src="{{asset('assets/'.$weapon->materia2)}}"/>
+                                <img src="{{asset('assets/'.$weapon->materia3)}}"/>
+                                <img src="{{asset('assets/'.$weapon->materia4)}}"/>
+                                <img src="{{asset('assets/'.$weapon->materia5)}}"/>
+                                <img src="{{asset('assets/'.$weapon->materia6)}}"/>
+                                <img src="{{asset('assets/'.$weapon->materia7)}}"/>
+                                <img src="{{asset('assets/'.$weapon->materia8)}}"/>
+                            </td>
                             <td>{{$weapon->localizacion}}</td>
                             <td>{{$weapon->coste}}</td>
                             <td>{{$weapon->notas}}</td>
