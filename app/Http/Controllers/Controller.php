@@ -50,6 +50,11 @@ class Controller extends BaseController
     {
         $this->doLocale();
         $service = new WebServiceControllerES();
+        if (App::getLocale() == 'es') {
+            $service = new WebServiceControllerES();
+        } else if (App::getLocale() == 'en') {
+            $service = new WebServiceControllerEN();
+        }
         $characters = $service->characters();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.characters')->with(compact('characters'));
@@ -62,6 +67,11 @@ class Controller extends BaseController
     {
         $this->doLocale();
         $service = new WebServiceControllerES();
+        if (App::getLocale() == 'es') {
+            $service = new WebServiceControllerES();
+        } else if (App::getLocale() == 'en') {
+            $service = new WebServiceControllerEN();
+        }
         $secondaryCharacters = $service->secondaryCharacters();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.secondaryCharacters')->with(compact('secondaryCharacters'));
@@ -74,6 +84,11 @@ class Controller extends BaseController
     {
         $this->doLocale();
         $service = new WebServiceControllerES();
+        if (App::getLocale() == 'es') {
+            $service = new WebServiceControllerES();
+        } else if (App::getLocale() == 'en') {
+            $service = new WebServiceControllerEN();
+        }
         $enemies = $service->enemies();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.enemies')->with(compact('enemies'));
@@ -86,6 +101,11 @@ class Controller extends BaseController
     {
         $this->doLocale();
         $service = new WebServiceControllerES();
+        if (App::getLocale() == 'es') {
+            $service = new WebServiceControllerES();
+        } else if (App::getLocale() == 'en') {
+            $service = new WebServiceControllerEN();
+        }
         $materia = $service->materia();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.materia')->with(compact('materia'));
@@ -98,6 +118,11 @@ class Controller extends BaseController
     {
         $this->doLocale();
         $service = new WebServiceControllerES();
+        if (App::getLocale() == 'es') {
+            $service = new WebServiceControllerES();
+        } else if (App::getLocale() == 'en') {
+            $service = new WebServiceControllerEN();
+        }
         $weapons = $service->weapons();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.weapons')->with(compact('weapons'));
@@ -110,6 +135,11 @@ class Controller extends BaseController
     {
         $this->doLocale();
         $service = new WebServiceControllerES();
+        if (App::getLocale() == 'es') {
+            $service = new WebServiceControllerES();
+        } else if (App::getLocale() == 'en') {
+            $service = new WebServiceControllerEN();
+        }
         $songs = $service->songs();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.songs')->with(compact('songs'));
@@ -122,6 +152,11 @@ class Controller extends BaseController
     {
         $this->doLocale();
         $service = new WebServiceControllerES();
+        if (App::getLocale() == 'es') {
+            $service = new WebServiceControllerES();
+        } else if (App::getLocale() == 'en') {
+            $service = new WebServiceControllerEN();
+        }
         $items = $service->items();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.items')->with(compact('items'));

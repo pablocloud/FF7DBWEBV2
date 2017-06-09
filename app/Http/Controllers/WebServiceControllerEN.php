@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 use Illuminate\Support\Facades\DB;
 
-class WebServiceControllerES extends BaseController
+class WebServiceControllerEN extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
 
@@ -19,7 +19,7 @@ class WebServiceControllerES extends BaseController
     public function characters()
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $characters = DB::connection('mysql_es')->select('SELECT * FROM personajes');
+        $characters = DB::connection('mysql_en')->select('SELECT * FROM personajes');
         return $characters;
     }
 
@@ -29,7 +29,7 @@ class WebServiceControllerES extends BaseController
     public function secondaryCharacters()
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $characters = DB::connection('mysql_es')->select('SELECT * FROM personajessecundarios');
+        $characters = DB::connection('mysql_en')->select('SELECT * FROM personajessecundarios');
         return $characters;
     }
 
@@ -39,7 +39,7 @@ class WebServiceControllerES extends BaseController
     public function enemies()
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $enemies = DB::connection('mysql_es')->select('SELECT * FROM enemigos');
+        $enemies = DB::connection('mysql_en')->select('SELECT * FROM enemigos');
         return $enemies;
     }
 
@@ -49,7 +49,7 @@ class WebServiceControllerES extends BaseController
     public function materia()
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $materia = DB::connection('mysql_es')->select('SELECT * FROM materia');
+        $materia = DB::connection('mysql_en')->select('SELECT * FROM materia');
         return $materia;
     }
 
@@ -59,7 +59,7 @@ class WebServiceControllerES extends BaseController
     public function weapons()
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $weapons = DB::connection('mysql_es')->select('SELECT * FROM armas');
+        $weapons = DB::connection('mysql_en')->select('SELECT * FROM armas');
         return $weapons;
     }
 
@@ -69,7 +69,7 @@ class WebServiceControllerES extends BaseController
     public function songs()
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $songs = DB::connection('mysql_es')->select('SELECT * FROM canciones');
+        $songs = DB::connection('mysql_en')->select('SELECT * FROM canciones');
         return $songs;
     }
 
@@ -79,7 +79,7 @@ class WebServiceControllerES extends BaseController
     public function items()
     {
         /** @noinspection PhpUndefinedMethodInspection */
-        $items = DB::connection('mysql_es')->select('SELECT * FROM objetos');
+        $items = DB::connection('mysql_en')->select('SELECT * FROM objetos');
         return $items;
     }
 
