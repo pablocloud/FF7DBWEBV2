@@ -23,4 +23,7 @@
     - ~~English~~
 + Multi-language support (Data)
     - ~~Spanish~~
+    - ~~English~~
++ Translations
+    - ~~Spanish~~
     - English
