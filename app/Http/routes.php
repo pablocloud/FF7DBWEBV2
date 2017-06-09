@@ -49,3 +49,24 @@ Route::group(['prefix' => 'service/es'], function () {
     Route::get('items', ['uses' => 'WebServiceControllerES@items', 'as' => 'itemsService']);
 
 });
+
+/** @noinspection PhpUndefinedMethodInspection */
+Route::group(['prefix' => 'service/en'], function () {
+
+    /** @noinspection PhpUndefinedMethodInspection */
+    Route::get('characters', ['uses' => 'WebServiceControllerES@characters', 'as' => 'charactersService']);
+    /** @noinspection PhpUndefinedMethodInspection */
+    Route::get('secondaryCharacters',
+        ['uses' => 'WebServiceControllerES@secondaryCharacters', 'as' => 'secondaryCharactersService']);
+    /** @noinspection PhpUndefinedMethodInspection */
+    Route::get('enemies', ['uses' => 'WebServiceControllerES@enemies', 'as' => 'enemiesService']);
+    /** @noinspection PhpUndefinedMethodInspection */
+    Route::get('materia', ['uses' => 'WebServiceControllerES@materia', 'as' => 'materiaService']);
+    /** @noinspection PhpUndefinedMethodInspection */
+    Route::get('weapons', ['uses' => 'WebServiceControllerES@weapons', 'as' => 'weaponsService']);
+    /** @noinspection PhpUndefinedMethodInspection */
+    Route::get('songs', ['uses' => 'WebServiceControllerES@songs', 'as' => 'songsService']);
+    /** @noinspection PhpUndefinedMethodInspection */
+    Route::get('items', ['uses' => 'WebServiceControllerES@items', 'as' => 'itemsService']);
+
+});
