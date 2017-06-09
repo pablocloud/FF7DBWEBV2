@@ -30,22 +30,22 @@ Route::group(['prefix' => ''], function () {
 });
 
 /** @noinspection PhpUndefinedMethodInspection */
-Route::group(['prefix' => 'service'], function () {
+Route::group(['prefix' => 'service/es'], function () {
 
     /** @noinspection PhpUndefinedMethodInspection */
-    Route::get('characters', ['uses' => 'WebServiceController@characters', 'as' => 'charactersService']);
+    Route::get('characters', ['uses' => 'WebServiceControllerES@characters', 'as' => 'charactersService']);
     /** @noinspection PhpUndefinedMethodInspection */
     Route::get('secondaryCharacters',
-        ['uses' => 'WebServiceController@secondaryCharacters', 'as' => 'secondaryCharactersService']);
+        ['uses' => 'WebServiceControllerES@secondaryCharacters', 'as' => 'secondaryCharactersService']);
     /** @noinspection PhpUndefinedMethodInspection */
-    Route::get('enemies', ['uses' => 'WebServiceController@enemies', 'as' => 'enemiesService']);
+    Route::get('enemies', ['uses' => 'WebServiceControllerES@enemies', 'as' => 'enemiesService']);
     /** @noinspection PhpUndefinedMethodInspection */
-    Route::get('materia', ['uses' => 'WebServiceController@materia', 'as' => 'materiaService']);
+    Route::get('materia', ['uses' => 'WebServiceControllerES@materia', 'as' => 'materiaService']);
     /** @noinspection PhpUndefinedMethodInspection */
-    Route::get('weapons', ['uses' => 'WebServiceController@weapons', 'as' => 'weaponsService']);
+    Route::get('weapons', ['uses' => 'WebServiceControllerES@weapons', 'as' => 'weaponsService']);
     /** @noinspection PhpUndefinedMethodInspection */
-    Route::get('songs', ['uses' => 'WebServiceController@songs', 'as' => 'songsService']);
+    Route::get('songs', ['uses' => 'WebServiceControllerES@songs', 'as' => 'songsService']);
     /** @noinspection PhpUndefinedMethodInspection */
-    Route::get('items', ['uses' => 'WebServiceController@items', 'as' => 'itemsService']);
+    Route::get('items', ['uses' => 'WebServiceControllerES@items', 'as' => 'itemsService']);
 
 });

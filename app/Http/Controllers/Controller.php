@@ -49,7 +49,7 @@ class Controller extends BaseController
     public function characters()
     {
         $this->doLocale();
-        $service = new WebServiceController();
+        $service = new WebServiceControllerES();
         $characters = $service->characters();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.characters')->with(compact('characters'));
@@ -61,7 +61,7 @@ class Controller extends BaseController
     public function secondaryCharacters()
     {
         $this->doLocale();
-        $service = new WebServiceController();
+        $service = new WebServiceControllerES();
         $secondaryCharacters = $service->secondaryCharacters();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.secondaryCharacters')->with(compact('secondaryCharacters'));
@@ -73,7 +73,7 @@ class Controller extends BaseController
     public function enemies()
     {
         $this->doLocale();
-        $service = new WebServiceController();
+        $service = new WebServiceControllerES();
         $enemies = $service->enemies();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.enemies')->with(compact('enemies'));
@@ -85,7 +85,7 @@ class Controller extends BaseController
     public function materia()
     {
         $this->doLocale();
-        $service = new WebServiceController();
+        $service = new WebServiceControllerES();
         $materia = $service->materia();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.materia')->with(compact('materia'));
@@ -97,7 +97,7 @@ class Controller extends BaseController
     public function weapons()
     {
         $this->doLocale();
-        $service = new WebServiceController();
+        $service = new WebServiceControllerES();
         $weapons = $service->weapons();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.weapons')->with(compact('weapons'));
@@ -109,7 +109,7 @@ class Controller extends BaseController
     public function songs()
     {
         $this->doLocale();
-        $service = new WebServiceController();
+        $service = new WebServiceControllerES();
         $songs = $service->songs();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.songs')->with(compact('songs'));
@@ -121,7 +121,7 @@ class Controller extends BaseController
     public function items()
     {
         $this->doLocale();
-        $service = new WebServiceController();
+        $service = new WebServiceControllerES();
         $items = $service->items();
         /** @noinspection PhpUndefinedMethodInspection */
         return view('pages.items')->with(compact('items'));
