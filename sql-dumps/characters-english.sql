@@ -1,0 +1,10 @@
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/aeris.gif', 'Aerith Gainsborough', '22', 'Florist', 'Staff', '7 February', 'Icicle Town');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/barret.gif', 'Barret Wallace', '35', 'Avalanche leader', 'Hand weapon', '15 December', 'Corel');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/cait.gif', 'Cait Sith', 'Desconocida', 'Vidente', 'Megáfono', 'Unknown', 'Desconocido');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/cid.gif', 'Cid Highwind', '32', 'Aviator', 'Spear', '22 February', 'Unknown');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/cloud.gif', 'Cloud Strife', '21', 'Mercenary', 'Sword', '19 August', 'Nibelheim');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/red13.gif', 'Red XIII', '45', 'Beast (roar roar and shit)', 'Bandana', 'Unknown', 'Cosmo Canyon');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/sephiroth.gif', 'Sephiroth', 'Unknown', 'Unknown', 'Katana', 'Unknown', 'Unknown');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/tifa.gif', 'Tifa Lockheart', '20', 'Avalanche member', 'Gloves', '3 May', 'Nibelheim');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/vincent.gif', 'Vincent Valantine', 'Unknown', 'Unemployee', 'Gun', '13 October', 'Unknown');
+INSERT INTO ff7.personajes (imagen, nombre, edad, ocupacion, arma, fechana, lugarna) VALUES ('imagenes/personajes/yuffie.gif', 'Yuffie Kisaragi', '16', 'Ninja, Thif...ejem ejem', 'Ninja weapons', '20 November', 'Wutai');
