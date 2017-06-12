@@ -27,3 +27,8 @@
 + Translations
     - ~~Spanish~~
     - English
+    
+#### Why sql dumps instead of seed?
+
+Simple, this project was already done and therebefore it was
+easier to export the data.
