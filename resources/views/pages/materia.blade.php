@@ -18,15 +18,15 @@
                     </thead>
                     <tbody>
                     @forelse($materia as $mater)
-                        @if($mater->tipo === 'Apoyo')
+                        @if($mater->tipo === 'Apoyo' || $mater->tipo === 'Support')
                             <tr style="background-color: #0bc7ff">
-                        @elseif($mater->tipo === 'Comando')
+                        @elseif($mater->tipo === 'Comando' || $mater->tipo === 'Command')
                             <tr style="background-color: #fffd00">
-                        @elseif($mater->tipo === 'Independiente')
+                        @elseif($mater->tipo === 'Independiente' || $mater->tipo === 'Independent')
                             <tr style="background-color: #ff7cd1">
-                        @elseif($mater->tipo === 'Invocacion')
+                        @elseif($mater->tipo === 'Invocacion' || $mater->tipo === 'Summon')
                             <tr style="background-color: #ff4b44">
-                        @elseif($mater->tipo === 'Magia')
+                        @elseif($mater->tipo === 'Magia' || $mater->tipo === 'Magic')
                             <tr style="background-color: #7bff66">
                         @else
                             <tr>
